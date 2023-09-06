@@ -27,7 +27,7 @@ const handleSubmit = (e)=>{
             onChange={handleChange}
           />
         </form>
-        <button className="add-btn" type="submit" onClick={handleSubmit}>Add</button>
+        <button className="add-btn btn" type="submit" onClick={handleSubmit}>Add</button>
       </div>
     </>
   );
