@@ -6,7 +6,20 @@ import Header from "./Header";
 import Task from "./Task.jsx";
 
 const Todo = () => {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([
+    {
+      id: uuidv4(),
+      task: "This is demo completed task",
+      completed: true,
+      isEditing: false,
+    },
+    {
+      id: uuidv4(),
+      task: "I'm Demo task, Please Delete Me",
+      completed: false,
+      isEditing: false,
+    },
+  ]);
 
   const addTask = (newTask) => {
     setTasks([
